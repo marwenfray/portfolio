@@ -1,0 +1,46 @@
+@font-face{
+    font-family: lobster;
+    src: url(Lobster-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: lobster;
+    align-items: baseline;
+    position: sticky;
+    width: 100%;
+}
+nav{position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    background-color: grey;
+    flex-wrap: wrap;
+
+}
+nav > div > a{border: 2px solid blue;
+
+}
+aside{
+    border-left: solid rgba(78, 78, 78, 0.555) 3px;
+    display: flex;
+    float: right;
+    position: sticky;
+    top: 65px;
+    height: 100%;
+}
+aside > ol {
+    margin-left: 25px;
+
+}
