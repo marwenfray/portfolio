@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color:rgba(70, 69, 69, 0.199);
+}
 header{
     background-color: lightgrey;
     margin-left: auto;
@@ -19,28 +22,148 @@ header{
     width: 100%;
 }
 nav{position: sticky;
+    border-top:2px solid rgb(65, 64, 64);
+    border-bottom: 2px solid rgb(65, 64, 64);
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 5px;
     width: 100%;
     background-color: grey;
-    flex-wrap: wrap;
-
+    flex: wrap;
+} 
+nav > a{border: 1px solid blue;
+    border-radius: 23px;
+    color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 5px;
+    background-color: rgb(48, 47, 47);
+    font-size: 1.5em;
 }
-nav > div > a{border: 2px solid blue;
-
+nav > a:hover{
+    border: none;
+    background-color: seashell;
+    text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    aside{
+        display: none;
+    }
+    aside > ol {
+        display: none;
+    }
+}
+ 
 aside{
+    background-color: lightgrey;
     border-left: solid rgba(78, 78, 78, 0.555) 3px;
     display: flex;
     float: right;
     position: sticky;
-    top: 65px;
+    top: 57px;
     height: 100%;
+    padding-bottom: 30%;
+    padding-top: 15%;
+    overflow: hidden;
 }
 aside > ol {
     margin-left: 25px;
 
 }
+main{
+    display:flex;
+flex-direction: column;
+width: 87%;
+padding-left: 50px;
+}
+#Biography{
+    background-color: lightgrey ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.video{
+    width: 100%;
+    height: 100%;
+}
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Education {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid whitesmoke;
+  }
+  
+  tr:hover {background-color: whitesmoke ;}
+  #Experience {
+      background-color:lightgray ;
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+  }
+  #LanguageSkills{
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+
+  }
+  #ComputerSkills{
+      background-color: lightgrey;
+      display: flex;
+      flex-direction: column;
+  }
+  .Icons{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .Icons > figure{
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      width: 150px;
+      overflow: hidden;
+  }
+  .Icons > figure > img{
+      width: 70%;
+  }
+ #Contact {
+     background-color: grey;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #Contact form{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 40px;
+ }
+ footer{
+     display: flex;
+     justify-content: space-evenly;
+ }
+ hr{
+     color: rgba(0, 0, 0, 0.377);
+     height: 2px;
+ }
